@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
+           version="4.0">
+    
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>TeacherController</servlet-name>
+        <servlet-class>com.yongkj.manage.controller.TeacherController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TeacherController</servlet-name>
+        <url-pattern>/teacher</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GradeController</servlet-name>
+        <servlet-class>com.yongkj.manage.controller.GradeController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GradeController</servlet-name>
+        <url-pattern>/grade</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentController</servlet-name>
+        <servlet-class>com.yongkj.manage.controller.StudentController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentController</servlet-name>
+        <url-pattern>/student</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>cors</filter-name>
+        <filter-class>com.yongkj.manage.util.CorsFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>cors</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+</web-app>
