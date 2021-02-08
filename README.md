@@ -1,37 +1,32 @@
-# class-background
+# 班级管理系统（前端）
 
 #### 介绍
-班级管理系统（后端）
+本项目为学习与练习项目，实现一个简单的班级管理系统练习 C3P0 数据库连接池的使用步骤。主要功能包括班级管理、教师管理以及学生管理。
 
-#### 软件架构
-软件架构说明
+#### 链接
+班级管理系统：[http://m.yongkj.cn/html/class/](http://m.yongkj.cn/html/class/)
 
+#### 截图
 
-#### 安装教程
+![20210208171625.png](web/screenshot/20210208171625.png)
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+![20210208171713.png](web/screenshot/20210208171713.png)
+
+![20210208171801.png](web/screenshot/20210208171801.png)
+
+#### 技术栈
+MySQL+Servlet+C3P0+JDBC
+
+1.  数据处理采用Java Web中的Servlet容器技术完成
+2.  使用 PreparedStatement 拼接条件查询语句防止 SQL 注入
+3.  后台的数据存储主要采用开源的Mariadb数据库来完成
+
+#### 功能特性
+
+1.  班级、教师以及学生信息的增加、删除、修改
+2.  点击页面的刷新按钮即可刷新当前展示的表格数据
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+1.  edu_chinasofti.sql 为数据库备份文件
+2.  可在 src/com/yongkj/manage/dao/C3P0Utils.java 文件中修改数据库连接信息
